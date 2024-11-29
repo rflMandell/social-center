@@ -1,0 +1,86 @@
+:root{
+    --black: #1f1f1f;
+    --white: #f1f1f1;
+    --dpurple: #670a83;
+    --purple: #ae4bcc;
+    --gray: #d8d8d8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.box{
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 60px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(105, 105, 105, 0.6);
+}
+
+.img-container img{
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    border: var(--black) solid 2px;
+    margin: 20px;
+}
+
+.boxdc, .boxtt, .boxtw, .boxyt {
+    background-color: var(--gray);
+    border-radius: 5px;
+    margin: 15px;
+    padding: 0.5px;
+}
+
+.boxdc a, .boxtt a, .boxtw a, .boxyt a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 18px;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.boxdc i, .boxtt i, .boxtw i, .boxyt i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.boxdc a:hover { color: #0003cf; }
+.boxtt a:hover { color: #0092e6; }
+.boxtw a:hover { color: #8a00e6; }
+.boxyt a:hover { color: #ca0000; }
+
+footer{
+    margin-top: 20px;
+    font-size: 12px;
+    color: var(--white);
+    text-align: center;
+}
+
+footer a{
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover{
+    color: var(--purple);
+}
